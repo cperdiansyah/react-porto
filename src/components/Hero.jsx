@@ -28,7 +28,7 @@ export default function Hero(props) {
             </span>
             <h2 className='font-medium text-slate-700 text-lg mb-5 lg:text-2xl'>
               Frontend Developer &
-              <span className='text-slate-600 font-bold'>
+              <span className='text-secondary font-bold'>
                 &nbsp; Lifetime Learner
               </span>
             </h2>
@@ -50,7 +50,7 @@ export default function Hero(props) {
               dan saya selalu berusaha untuk meningkatkan diri.
             </p> */}
 
-            <p className='font-medium text-slate-400 mb-10 leading-relaxed'>
+            <p className='font-medium text-secondary mb-10 leading-relaxed'>
               Seorang
               <span className='text-slate-600 font-bold'>
                 &nbsp;Frontend Developer muda&nbsp;

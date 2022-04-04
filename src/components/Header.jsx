@@ -17,7 +17,7 @@ export default function Header(props) {
           <a
             key={index}
             className='nav-list-item'
-            href={`#${link.toLowerCase()}`}
+            href={`#${link.toLowerCase().replace(/\s/g, '-')}`}
           >
             {link}
           </a>
