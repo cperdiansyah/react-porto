@@ -1,7 +1,6 @@
-import React from 'react'
+import Header from 'components/Header';
+import React from 'react';
 
 export default function Home() {
-  return (
-    <div>Home</div>
-  )
+  return <Header className='mx-24 my-12' />;
 }
