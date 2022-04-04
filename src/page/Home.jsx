@@ -1,6 +1,12 @@
-import Header from 'components/Header';
+// import Header from 'components/Header';
+import Hero from 'components/Hero';
 import React from 'react';
 
 export default function Home() {
-  return <Header className='mx-24 my-12' />;
+  return (
+    <div className='homepage'>
+      {/* <Header className='container' /> */}
+      <Hero />
+    </div>
+  );
 }
