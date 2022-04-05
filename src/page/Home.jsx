@@ -1,12 +1,15 @@
 import About from 'components/About';
 import Header from 'components/Header';
 import Hero from 'components/Hero';
-import React from 'react';
+import React, { useEffect } from 'react';
 
 export default function Home() {
+  useEffect(() => {
+    document.title = 'Web Portofolio Chandra Perdiansyah';
+  });
   return (
     <div className='homepage'>
-      {/* <Header className='container' /> */}
+      <Header />
       <Hero />
       <About />
     </div>
