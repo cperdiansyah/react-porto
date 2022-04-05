@@ -13,16 +13,16 @@ export default function Hero(props) {
       <div className='container '>
         <div className='flex flex-wrap'>
           <div className='w-full self-center px-4 lg:w-1/2'>
-            <div className='flex items-end'>
+            <h1 className='flex items-end text-base font-semibold text-primary md:text-xl '>
+              Halo Semuanya &nbsp;
               <img
                 src='https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif'
                 alt='hello_sign'
-                className='icon-image mr-2'
+                className='icon-image mr-1'
+                Loading='lazy'
               />
-              <h1 className=' text-base font-semibold text-primary md:text-xl '>
-                Oh Halo Semuanya, saya
-              </h1>
-            </div>
+              , saya
+            </h1>
             <span className='block font-semibold text-dark text-4xl mt-1 lg:text-5xl'>
               Chandra Perdiansyah
             </span>
@@ -63,7 +63,7 @@ export default function Hero(props) {
               dan selalu berusaha untuk meningkatkan diri.
             </p>
             <Button
-              href='#tentang-saya'
+              href='#contact'
               type='link'
               className='text-base fong-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out'
             >
@@ -77,6 +77,7 @@ export default function Hero(props) {
                 src={fotoDiri}
                 alt='FotoDiri'
                 className='max-w-full mx-auto lg:mx-0 lg:ml-auto'
+                Loading='lazy'
               />
 
               <span className='absolute bottom-0 -z-10 left-1/2 -translate-x-1/2 lg:-translate-x-1/3  lg:scale-110'>
