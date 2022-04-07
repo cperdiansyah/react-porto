@@ -19,7 +19,7 @@ export default function Hero(props) {
                 src='https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif'
                 alt='hello_sign'
                 className='icon-image mr-1'
-                Loading='lazy'
+                loading='lazy'
               />
               , saya
             </h1>
@@ -77,7 +77,7 @@ export default function Hero(props) {
                 src={fotoDiri}
                 alt='FotoDiri'
                 className='max-w-full mx-auto lg:mx-0 lg:ml-auto'
-                Loading='lazy'
+                loading='lazy'
               />
 
               <span className='absolute bottom-0 -z-10 left-1/2 -translate-x-1/2 lg:-translate-x-1/3  lg:scale-110'>

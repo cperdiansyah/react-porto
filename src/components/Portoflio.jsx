@@ -27,7 +27,7 @@ export default function Portoflio() {
                 src='dist/img/portfolio/1.png'
                 alt='Landing Page'
                 width='w-full'
-                Loading='lazy'
+                loading='lazy'
               />
             </div>
             <h3 className='font-semibold text-xl text-dark mt-5 mb-3'>
@@ -44,7 +44,7 @@ export default function Portoflio() {
                 src='dist/img/portfolio/2.png'
                 alt='E-Commerce'
                 width='w-full'
-                Loading='lazy'
+                loading='lazy'
               />
             </div>
             <h3 className='font-semibold text-xl text-dark mt-5 mb-3'>
@@ -61,7 +61,7 @@ export default function Portoflio() {
                 src='dist/img/portfolio/3.png'
                 alt='Technical Documentation'
                 width='w-full'
-                Loading='lazy'
+                loading='lazy'
               />
             </div>
             <h3 className='font-semibold text-xl text-dark mt-5 mb-3'>
@@ -78,7 +78,7 @@ export default function Portoflio() {
                 src='dist/img/portfolio/4.png'
                 alt='Tribute Page'
                 width='w-full'
-                Loading='lazy'
+                loading='lazy'
               />
             </div>
             <h3 className='font-semibold text-xl text-dark mt-5 mb-3'>

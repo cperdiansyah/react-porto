@@ -25,7 +25,7 @@ export default function Blog() {
                 src='https://source.unsplash.com/360x200?programming'
                 alt='Programming'
                 className='w-full'
-                Loading='lazy'
+                loading='lazy'
               />
               <div className='py-8 px-6'>
                 <h3>
@@ -55,7 +55,7 @@ export default function Blog() {
                 src='https://source.unsplash.com/360x200?mechanical+keyboard'
                 alt='Mechanical Keyboard'
                 className='w-full'
-                Loading='lazy'
+                loading='lazy'
               />
               <div className='py-8 px-6'>
                 <h3>
@@ -85,7 +85,7 @@ export default function Blog() {
                 src='https://source.unsplash.com/360x200?coffee'
                 alt='Coffee'
                 className='w-full'
-                Loading='lazy'
+                loading='lazy'
               />
               <div className='py-8 px-6'>
                 <h3>

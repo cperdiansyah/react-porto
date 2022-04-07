@@ -3,7 +3,7 @@ import Brand from './Brand';
 import './Header.scss';
 
 export default function Header(props) {
-  const navLinks = ['Beranda', 'Tentang Saya', 'Portofolio', 'Blog', 'Contact'];
+  const navLinks = ['Beranda', 'Tentang Saya', 'Portfolio', 'Blog', 'Contact'];
   const className = [props.className];
 
   const hamburgerButton = useRef(null);
@@ -64,12 +64,21 @@ export default function Header(props) {
               <ul className='block lg:flex'>
                 {navLinks.map((link, index) => (
                   <li key={index} className='group'>
-                    <a
-                      className='nav-list-item text-base text-dark py-2 mx-8 flex group-hover:text-primary'
-                      href={`#${link.toLowerCase().replace(/\s/g, '-')}`}
-                    >
-                      {link}
-                    </a>
+                    {link === 'Contact' ? (
+                      <a
+                        className='nav-list-item text-base text-dark py-2 mx-8 flex  transition duration-300 ease-in-out group-hover:text-primary lg:text-white lg:bg-primary lg:hover:shadow-lg lg:hover:opacity-80 lg:py-3 lg:px-5 lg:rounded-full lg:group-hover:text-white'
+                        href={`#${link.toLowerCase().replace(/\s/g, '-')}`}
+                      >
+                        {link}
+                      </a>
+                    ) : (
+                      <a
+                        className='nav-list-item text-base text-dark py-2 mx-8 flex group-hover:text-primary'
+                        href={`#${link.toLowerCase().replace(/\s/g, '-')}`}
+                      >
+                        {link}
+                      </a>
+                    )}
                   </li>
                 ))}
               </ul>

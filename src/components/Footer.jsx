@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default function Footer() {
-  const navLinks = ['Beranda', 'Tentang Saya', 'Portofolio', 'Blog', 'Contact'];
+  const navLinks = ['Beranda', 'Tentang Saya', 'Portfolio', 'Blog', 'Contact'];
 
   return (
     <footer className='bg-dark pt-24 pb-12'>
