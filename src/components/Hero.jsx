@@ -7,7 +7,7 @@ export default function Hero(props) {
   const className = [props.className];
   return (
     <section
-      className={'hero-section pt-36 overflow-hidden' + className.join(' ')}
+      className={'hero-section pt-28 overflow-hidden' + className.join(' ')}
       id='beranda'
     >
       <div className='container '>

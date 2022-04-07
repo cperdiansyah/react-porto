@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default function Footer() {
-  const navLinks = ['Beranda', 'Tentang Saya', 'Portfolio', 'Blog', 'Contact'];
+  const navLinks = ['Beranda', 'Tentang Saya', 'Portfolio', 'Blog', 'Kontak'];
 
   const socialLinks = [
     {
@@ -27,7 +27,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className='bg-dark pt-24 pb-12'>
+    <footer className='bg-dark py-20'>
       <div className='container'>
         <div className='flex flex-wrap jus text-center lg:text-left'>
           <div className='w-full px-4 mb-12 text-slate-300 font-medium md:w-2/4 '>

@@ -9,7 +9,7 @@ import React, { useEffect } from 'react';
 
 export default function Home() {
   useEffect(() => {
-    document.title = 'Web Portofolio Chandra Perdiansyah';
+    document.title = 'Chandra Perdiansyah';
   });
   return (
     <div className='homepage'>
