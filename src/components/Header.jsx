@@ -15,9 +15,9 @@ export default function Header(props) {
     hamburger.classList.toggle('hamburger-active');
     nav.classList.toggle('hidden');
   };
+  const header = document.querySelector('header');
 
   window.onscroll = () => {
-    const header = document.querySelector('header');
     const fixedNav = header.offsetTop;
 
     if (window.pageYOffset > fixedNav) {
@@ -59,7 +59,8 @@ export default function Header(props) {
 
             <nav
               ref={navMenu}
-              className='nav-menu hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none'
+              className='nav-menu hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none
+              '
             >
               <ul className='block lg:flex'>
                 {navLinks.map((link, index) => (

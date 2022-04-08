@@ -16,7 +16,7 @@ export default function About(props) {
     {
       name: 'Github',
       svg: 'M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12',
-      link: 'https://www.github.com/cperdiansyaah',
+      link: 'https://www.github.com/cperdiansyah',
     },
     {
       name: 'Linkedin',
@@ -39,10 +39,12 @@ export default function About(props) {
               Kenali saya lebih dekat
             </h2>
             <p className='font-medium text-base text-secondary max-w-xl lg:text-xl'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
-              sapiente minus numquam rem aperiam, velit a, veniam sunt
-              laudantium asperiores veritatis ipsum, voluptate quasi modi error
-              consequatur ad sint non?
+              Membangun situs web dan aplikasi yang canggih, mudah digunakan,
+              ramah pengguna benar-benar merupakan passion saya. Selain
+              pengetahuan yang saya miliki, saya secara aktif mencari teknologi
+              baru dan mengikuti perkembangan tren dan kemajuan industri. Hal
+              ini memungkinkan saya untuk up-to-date dan berkualitas dalam
+              memberikan pekerjaan yang luar biasa.
             </p>
           </div>
           <div className='w-full px-4 lg:w-1/2'>
@@ -50,12 +52,13 @@ export default function About(props) {
               Mari terhubung dengan saya
             </h3>
             <p className='font-medium text-base text-secondary mb-6 lg:text-lg'>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error
-              ipsam voluptas nisi corporis, adipisci ad fuga. Quasi, quam?
+              Berikut adalah beberapa sosial media yang saya gunakan, mari
+              terhubung dengan saya untuk mengenal saya lebih dekat
             </p>
             <div className='flex items-center'>
-              {socialLinks.map((data) => (
+              {socialLinks.map((data, index) => (
                 <a
+                  key={index}
                   href={data.link}
                   target='_blank'
                   rel='noopener noreferrer'

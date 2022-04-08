@@ -10,6 +10,7 @@ import React, { useEffect } from 'react';
 export default function Home() {
   useEffect(() => {
     document.title = 'Chandra Perdiansyah';
+    window.scrollTo(0, 0);
   });
   return (
     <div className='homepage'>
