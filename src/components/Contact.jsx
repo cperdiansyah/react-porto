@@ -117,8 +117,8 @@ export default function Contanct() {
               Hubungi Saya
             </h2>
             <p className='font-medium text-md text-secondary md:text-lg'>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Blanditiis, sed.
+              Untuk setiap pertanyaan dan informasi lainnya, silakan hubungi
+              saya melalui form
             </p>
           </div>
         </div>
