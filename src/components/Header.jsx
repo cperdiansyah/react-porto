@@ -15,9 +15,9 @@ export default function Header(props) {
     hamburger.classList.toggle('hamburger-active');
     nav.classList.toggle('hidden');
   };
-  const header = document.querySelector('header');
 
   window.onscroll = () => {
+    const header = document.querySelector('header');
     const fixedNav = header.offsetTop;
 
     if (window.pageYOffset > fixedNav) {

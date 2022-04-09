@@ -97,7 +97,7 @@ export default function Footer() {
             <p className='font-medium text-xs text-slate-500 text-center'>
               Dibuat dengan <span className='text-pink-500'>❤️</span> oleh{' '}
               <a
-                href='https://instagram.com/cperdiansyah'
+                href='https://www.linkedin.com/in/cperdiansyah'
                 target='_blank'
                 className='font-bold text-primary'
                 rel='noopener noreferrer'

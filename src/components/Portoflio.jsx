@@ -54,6 +54,7 @@ export default function Portoflio() {
   ];
 
   const dataPortoflioSorted = dataPortoflio.sort((a, b) => b.date - a.date);
+  
   return (
     <section id='portfolio' className='pt-36 pb-16 bg-slate-100'>
       <div className='container'>
