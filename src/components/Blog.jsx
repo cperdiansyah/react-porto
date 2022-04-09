@@ -22,7 +22,7 @@ const blog = [
   },
   {
     title: 'Lulus IDCamp 2021 - Frontend Path',
-    link: 'https://www.linkedin.com/posts/cperdiansyah_fga-dts-dicoding-activity-6905788087721431040-_lmb?utm_source=linkedin_share&utm_medium=member_desktop_web',
+    link: 'https://www.linkedin.com/posts/cperdiansyah_frontend-dicoding-idcamp-activity-6905796406318116864-aC99?utm_source=linkedin_share&utm_medium=member_desktop_web',
     description:
       'Tahun 2021 lalu memberikan banyak pengalaman berharga buat saya, banyak kesempatan yang saya coba guna meningkatkan kemampuan diri, saya mencoba "memantaskan diri" untuk bersaing di industri. Berbagai kesempatan pelatihan yang ada saya coba kejar guna mempersempit gap antara lulusan kampus dengan kebutuhan industri.',
     image:
