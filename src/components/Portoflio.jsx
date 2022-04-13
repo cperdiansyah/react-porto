@@ -53,8 +53,6 @@ export default function Portoflio() {
     },
   ];
 
-  console.log(dataPortoflio);
-
   const dataPortoflioSorted = dataPortoflio.sort((a, b) => b.date - a.date);
 
   return (

@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
-export default function Contanct() {
+export default function Contact() {
   const form = useRef();
   const [loading, setLoading] = useState(false);
   const [finish, setFinish] = useState(false);
@@ -18,12 +18,9 @@ export default function Contanct() {
       )
       .then(
         (result) => {
-          console.log(result.text);
           setLoading(false);
+          console.log(result.text);
           setFinish(true);
-          setTimeout(() => {
-            setFinish(false);
-          }, 2000);
         },
         (error) => {
           console.log(error.text);
@@ -79,24 +76,34 @@ export default function Contanct() {
 
   if (loading) {
     content = (
-      <div class='flex justify-center items-center flex-wrap flex-col'>
+      <div className='flex justify-center items-center flex-wrap flex-col px-4 mb-8 h-[300px]'>
         <div
           style={{ borderTopColor: 'transparent' }}
-          class='w-16 h-16 border-4 border-blue-400 border-solid rounded-full animate-spin'
+          className='w-16 h-16 border-4 border-blue-400 border-solid rounded-full animate-spin'
         ></div>
-        <span>Loading .....</span>
+        <span className='font-semibold pt-5 text-2xl text-primary'>
+          Loading .....
+        </span>
       </div>
     );
   }
 
   if (finish) {
     content = (
-      <div className='flex justify-center items-center flex-wrap flex-col'>
-        <div
-          style={{ borderTopColor: 'transparent' }}
-          className='w-16 h-16 border-4 border-blue-400 border-solid rounded-full animate-spin'
-        ></div>
-        <span>Pesan Telah Terkirim</span>
+      <div className='flex justify-center items-center flex-wrap flex-col px-4 mb-8 h-[300px]'>
+        <span className='material-icons-outlined text-blue-500 text-6xl'>
+          done
+        </span>
+        <span className='font-semibold pt-5 text-2xl text-primary'>
+          Berhasil terkirim
+        </span>
+        <button
+          type='button'
+          className='px-3 py-4 bg-primary text-white rounded-xl shadow-md mt-3'
+          onClick={() => setFinish(false)}
+        >
+          Kirim Form Lagi
+        </button>
       </div>
     );
   }
