@@ -1,6 +1,10 @@
 import React from 'react';
 import Moment from 'react-moment';
 import 'moment-timezone';
+import eralintas from 'assets/image/porto/eralintas.jfif';
+import movienesia from 'assets/image/porto/1649305808303.jfif';
+import makanin from 'assets/image/porto/1649305817750.jfif';
+import sobatgadaiku from 'assets/image/porto/1649305233239.jfif';
 
 export default function Portoflio() {
   const dataPortoflio = [
@@ -9,7 +13,7 @@ export default function Portoflio() {
       url: 'http://eralintasdata.co.id/',
       description:
         'Website company profile untuk bisnis yang bergerak di bidang konsultan IT, website yang dibangun dengan menggunakan standar pemrograman web dan dibantu dengan framework bootstrap CSS agar mendapatkan hasil yang sesuai dengan kebutuhan',
-      image: '../assets/image/porto/eralintas.jfif',
+      image: eralintas,
       date: new Date('2020-09-01'),
       tech: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
     },
@@ -18,7 +22,7 @@ export default function Portoflio() {
       url: 'https://cper-fwd-fundamental.netlify.app/',
       description:
         'Situs web yang menyajikan data film menggunakan API TMDB API. Website yang dibangun hanya fokus pada fetch API dan slicing design',
-      image: '../assets/image/porto/movienesia.png',
+      image: movienesia,
       date: new Date('2021-09-01'),
       tech: ['HTML', 'SCSS', 'JavaScript', 'TMDB API'],
     },
@@ -27,7 +31,7 @@ export default function Portoflio() {
       url: 'https://cperdiansyah-fwd-sub3.netlify.app/',
       description:
         'Website yang menyajikan data restoran dan menu-menu di dalamnya. CRUD dengan fetch API, mendukung Progressive Web App (PWA), dan berkinerja baik pada PageSpeed Insights',
-      image: '../assets/image/porto/makanin.png',
+      image: makanin,
       date: new Date('2021-12-01'),
       tech: [
         'HTML',
@@ -43,11 +47,13 @@ export default function Portoflio() {
       url: 'https://www.sobatgadaiku.com/',
       description:
         'Website penggadaian properti dan aset yang dibangun menggunakan wordpress dengan banyak kustomisasi desain menggunakan tailwind css serta berfokus pada SEO agar muncul pada halaman awal pencarian google',
-      image: '../assets/image/porto/SobatGadaiku.png',
+      image: sobatgadaiku,
       date: new Date('2021-12-01'),
       tech: ['Wordpress', 'Tailwind CSS', 'JavaScript'],
     },
   ];
+
+  console.log(dataPortoflio);
 
   const dataPortoflioSorted = dataPortoflio.sort((a, b) => b.date - a.date);
 
