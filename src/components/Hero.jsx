@@ -63,7 +63,7 @@ export default function Hero(props) {
               dan selalu berusaha untuk meningkatkan diri.
             </p>
             <Button
-              href='#contact'
+              href='#kontak'
               type='link'
               className='text-base fong-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out'
             >

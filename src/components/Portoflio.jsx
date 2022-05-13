@@ -5,6 +5,7 @@ import eralintas from 'assets/image/porto/eralintas.jfif';
 import movienesia from 'assets/image/porto/1649305808303.jfif';
 import makanin from 'assets/image/porto/1649305817750.jfif';
 import sobatgadaiku from 'assets/image/porto/1649305233239.jfif';
+import reactMovienesia from 'assets/image/porto/react-movienesia.jpg';
 
 export default function Portoflio() {
   const dataPortoflio = [
@@ -50,6 +51,23 @@ export default function Portoflio() {
       image: sobatgadaiku,
       date: new Date('2021-12-01'),
       tech: ['Wordpress', 'Tailwind CSS', 'JavaScript'],
+    },
+    {
+      title: 'Movienesia 2.0',
+      url: 'https://cperdiansyah-react-movie.netlify.app/',
+      description:
+        'Web App yang menyajikan data film menggunakan TMDB API sebagai resource. Website ini dibangun menggunakan React.js dan Tailwind css, project ini hanya fokus pada implementasi side Effects dan fetch API pada React.js',
+      image: reactMovienesia,
+      date: new Date('2022-04-28'),
+      tech: [
+        'HTML',
+        'SCSS',
+        'JavaScript',
+        'TMDB API',
+        'React.JS',
+        'Tailwind CSS',
+        'Context API',
+      ],
     },
   ];
 

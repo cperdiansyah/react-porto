@@ -104,7 +104,16 @@ export default function Footer() {
               >
                 Chandra Perdiansyah
               </a>
-              , menggunakan
+              , menggunakan{' '}
+              <a
+                href='https://https://reactjs.org/'
+                target='_blank'
+                className='font-bold text-sky-300'
+                rel='noopener noreferrer'
+              >
+                React.js
+              </a>{' '}
+              &{' '}
               <a
                 href='https://tailwindcss.com'
                 target='_blank'

@@ -6,6 +6,8 @@ export default function Contact() {
   const [loading, setLoading] = useState(false);
   const [finish, setFinish] = useState(false);
 
+  // console.log(name);
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -66,6 +68,7 @@ export default function Contact() {
       <div className='w-full px-4'>
         <button
           className='text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500'
+          // type={name && email && message ? 'disable' : 'submit'}
           type='submit'
         >
           Kirim
@@ -110,8 +113,18 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setLoading(true);
-    sendEmail(e);
+
+    if (form) {
+      const name = form.current.elements.name.value;
+      const email = form.current.elements.email.value;
+      const message = form.current.elements.message.value;
+      if (name && email && message) {
+        setLoading(true);
+        sendEmail(e);
+      } else {
+        alert('Form tidak boleh kosong');
+      }
+    }
   };
 
   return (
